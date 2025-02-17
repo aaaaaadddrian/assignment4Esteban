@@ -1,0 +1,38 @@
+1. This is the stack at each step;
+
+STEP 1:
+8,
+STEP 2:
+8, 2,
+STEP 3:
+pop() = 2
+8,
+STEP 4:
+16,
+STEP 5:
+16, 10,
+STEP 6:
+16, 5,
+
+
+2.
+
+
+
+3. To search a Deque in O(n/2) time we want to search from both ends at a time:
+
+public int findIndex(Object T, Deque deque){
+        for(int i = 0; i < deque.size(); i++){
+            if(deque.pollFirst() == T){
+                return i;
+            }
+            if(deque.pollLast() == T){
+                return deque.size() - i;
+            }
+        }
+        return -1;
+    }
+
+This is code to do that.
+
+
