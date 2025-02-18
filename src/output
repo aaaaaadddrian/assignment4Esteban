@@ -14,12 +14,6 @@ STEP 5:
 STEP 6:
 16, 5,
 
-push(4)
-• push(pop()+4)
-• push(8)
-• push(pop()/2)
-• pop()
-• pop()
 
 2. This is the Queue at each step
 STEP 1:
