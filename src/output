@@ -35,4 +35,21 @@ public int findIndex(Object T, Deque deque){
 
 This is code to do that.
 
+7. Algorithm Analysis:
+
+Balanced Bracket is O(n) time where n is the length of the String given as an input.
+I know it is O(n) time because we traverse the whole String one time.
+Balanced bracket has O(n), n = length of string, space complexity because in the worst case we push all n elements to the stack.
+
+
+Decode String is O(n) time where n is the length of the String given as input.
+I know it is O(n) time because we traverse the whole encoded String one time, and everything else is atomics.
+Decode String has O(n), n = length of string, space complexity because we store up to n elements in our stack.
+Technically it is more like O(2n) space complexity because we create the variable temp n times, but we chop off the constant
+
+
+InfixPostfix is O(n) time where n is the length of the String given as input.
+I know it is O(n) time because we traverse the whole expression one time only.
+InfixPostfix is O(n) n = length of string, although we will never store all n elements in our stack O(n) is our upper limit.
+
 
